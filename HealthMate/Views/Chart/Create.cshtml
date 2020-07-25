@@ -1,0 +1,40 @@
+﻿@model HealthMate.Models.Flags
+
+@{
+    ViewData["Title"] = "Create";
+
+}
+
+
+
+<h1>Flag</h1>
+<h4>Provide notes for the selected flagged item</h4>
+<hr />
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FlagId" />
+            <div class="form-group">
+
+                <label asp-for="FlagMeal" class="control-label"></label>
+                <select asp-for="FlagMealId" class="form-control" asp-items="ViewBag.MealId" disabled></select>
+
+
+
+                <label asp-for="FlagNotes" class="control-label"></label>
+                <textarea asp-for="FlagNotes" class="form-control" /></textarea>
+
+                <br />
+                <input type="submit" value="Flag" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

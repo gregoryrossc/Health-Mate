@@ -1,0 +1,40 @@
+﻿@model IEnumerable<HealthMate.Models.Flags>
+
+@{
+    ViewData["Title"] = "Flagged";
+}
+
+<h1>Flagged Foods</h1>
+<div class="float-right"><a href="NewFlag" class="btn btn-primary" role="button" aria-disabled="true">Add Flag</a></div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FlagMeal.MealName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlagNotes)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlagMeal.MealName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlagNotes)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.FlagId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.FlagId">Unflag</a> |
+                </td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>

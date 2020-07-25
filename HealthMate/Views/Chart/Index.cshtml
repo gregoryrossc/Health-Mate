@@ -1,0 +1,88 @@
+﻿@model IEnumerable<HealthMate.Models.Stats>
+
+@{
+    ViewData["Title"] = "Health Stats";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<div class="card mb-3">
+    <div class="card-header bg-danger-warning text-dark">
+        <i class="fade fa-thumbs-o-up" aria-hidden="true"></i>
+
+        Your Food Diary For:
+        <form asp-action="Index" method="get">
+            <input type="date" id="calendar" name="calendar" value="@ViewBag.selectedDate" />
+
+            <input type="submit" value="Filter" class="btn btn-primary" />
+
+            <div class="float-right"><a href="Meals" class="btn btn-primary" role="button" aria-disabled="true">Add Food</a></div>
+
+        </form>
+
+
+    </div>
+    <!--INSERT DAILY FOOD RECORD-->
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Meal)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Meal.Calories)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Meal.Carbohydrates)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Meal.Fat)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Meal.Protein)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                 
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Meal.MealName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Meal.Calories)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Meal.Carbohydrates)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Meal.Fat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Meal.Protein)
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.RecordId">Delete</a> |
+                        <a asp-action="Create" asp-route-id="@item.MealId">Flag</a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+            </table>
+        <br />
+        <br />
+    </div>
+
+
+
+    <div class="card-footer small text-muted" style="background-color:#3370FF;"><p style="color:#FFFFFF">Updated yesterday at 11:59 PM</p></div>
+</div>
+<br />
+<br />
