@@ -9,10 +9,18 @@ Choose a date           |  filter by date
 :-------------------------:|:-------------------------:
 ![](choosedate.png) |  ![](filteredbydate.png)
 
-Get All Employee's             |  Delete Employee
+Add food to diary             |  Filter foods from SQL database
 :-------------------------:|:-------------------------:
-![](getall.png) |  ![](delete.png)
+![](searchabledb.png ) |  ![](searchfilterfood.png)
 
-Get Single Employee  (employee id = 6)           |  Post (create) Employee
+Food saves to diary           |  Flag Food (causes reaction)
 :-------------------------:|:-------------------------:
-![](get1.png) |  ![](postjsondata.png)
+![](foodsavestodiaray.png) |  ![](flagfood.png)
+
+Food is flagged           |  Edit flags
+:-------------------------:|:-------------------------:
+![](flagged.png) |  ![](edited.png)
+
+edit success           |  Also included
+:-------------------------:|:-------------------------:
+![](editsuccess.png) |  User logins, user specific data, & More
