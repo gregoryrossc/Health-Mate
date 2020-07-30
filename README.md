@@ -1,5 +1,5 @@
 # Health-Mate
-health mate app
+health mate web application
 
 Tracker for food elimination diets, finds the root cause of adverse food reactions.
 
