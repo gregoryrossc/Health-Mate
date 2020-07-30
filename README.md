@@ -1,6 +1,6 @@
 # Health-Mate
 Health-Mate web application.
-Tracker for food elimination diets, helps find the root cause of adverse food reactions.
+Tracker for food elimination diets, helps find and keep track of the root cause of adverse food reactions in an individual.
 
 Quick overview:
 
