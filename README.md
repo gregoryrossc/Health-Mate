@@ -15,7 +15,7 @@ Add food to diary             |  Filter foods from SQL database
 
 Food saves to diary           |  Flag Food (causes reaction)
 :-------------------------:|:-------------------------:
-![](foodsavestodiaray.png) |  ![](flagfood.png)
+![](foodsavestodiaray.png) |  ![](editsuccess.png)
 
 Food is flagged           |  Edit flags
 :-------------------------:|:-------------------------:
@@ -23,4 +23,4 @@ Food is flagged           |  Edit flags
 
 edit success           |  Also included
 :-------------------------:|:-------------------------:
-![](editsuccess.png) |  User logins, user specific data, & More
+![](flagfood.png) |  User logins, user specific data, & More
