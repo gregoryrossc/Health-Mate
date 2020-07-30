@@ -19,8 +19,8 @@ Food saves to diary           |  Flag Food (causes reaction)
 
 Food is flagged           |  Edit flags
 :-------------------------:|:-------------------------:
-![](flagged.png) |  ![](edited.png)
+![](flagged.png) |  ![](flagfood.png)
 
 edit success           |  Also included
 :-------------------------:|:-------------------------:
-![](flagfood.png) |  User logins, user specific data, & More
+![](edited.png) |  User logins, user specific data, & More
