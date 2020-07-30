@@ -15,11 +15,11 @@ Add food to diary             |  Filter foods from SQL database
 
 Food saves to diary           |  Flag Food (causes reaction)
 :-------------------------:|:-------------------------:
-![](foodsavestodiaray.png) |  ![](editsuccess.png)
+![](foodsavestodiaray.png) |  ![](flagfood.png)
 
 Food is flagged           |  Edit flags
 :-------------------------:|:-------------------------:
-![](flagged.png) |  ![](flagfood.png)
+![](flagged.png) |  ![](editsuccess.png)
 
 edit success           |  Also included
 :-------------------------:|:-------------------------:
