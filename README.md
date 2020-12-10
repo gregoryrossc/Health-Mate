@@ -23,4 +23,4 @@ Food is flagged           |  Edit flags
 
 edit success           |  Also included
 :-------------------------:|:-------------------------:
-![](edited.png) |  User logins, user specific data, & More
+![](edited.png) |  User logins, user specific data, & More.
