@@ -3,6 +3,8 @@ Health-Mate Web Application.
 <br>
 Tracker for food elimination diets, helps detect and keep track of adverse food reactions.
 
+In the process of updated to V2 where it will be hosted online with additional features.
+
 Quick overview:
 
 Choose a date           |  filter by date
